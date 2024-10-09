@@ -1,0 +1,106 @@
+
+/* src/Registration.css */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #f9f9f9, #f0f0f0);
+  font-family: 'Roboto', sans-serif;
+}
+
+.registration-box {
+  background: #000;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registration-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.registration-box h2 {
+  color: #ff3385;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.registration-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-field {
+  background: white;
+  color: black;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #ff3385;
+  outline: none;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: black; /* Set icon color to black */
+}
+
+.create-account-button {
+  background-color: #ff3385;
+  border: none;
+  color: white;
+  padding: 12px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-account-button:hover {
+  background-color: #cc0066;
+  box-shadow: 0 8px 16px rgba(204, 0, 102, 0.3);
+}
+
+.registration-box p {
+  margin-top: 20px;
+  color: #666;
+}
+
+.registration-box p a {
+  color: #ff3385;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.registration-box p a:hover {
+  color: #cc0066;
+  text-decoration: underline;
+}
